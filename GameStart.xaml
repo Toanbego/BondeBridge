@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="BondeBridge.GameStart"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BondeBridge"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Visibility="Visible" BorderThickness="2" BorderBrush="Blue" CornerRadius="8" Margin="50,10,50,10" Background="LightSkyBlue" Grid.ColumnSpan="3">
+            <TextBlock Foreground="White" Background="LightSkyBlue" Text="BondeBridge" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Impact" FontSize="36"/>
+        </Border>
+
+        <Border Grid.Row="2" Grid.Column="1" Visibility="Visible" BorderThickness="2" BorderBrush="Blue" CornerRadius="8" Margin="5,5,5,5" Background="LightSkyBlue">
+            <Button x:Name="start_game" Click="start_game_Click" Content="Start Game" Background="LightSkyBlue" FontFamily="Impact" FontSize="24" FontWeight="Bold" />
+        </Border>
+        <Border Grid.Row="4" Grid.Column="1" Visibility="Visible" BorderThickness="2" BorderBrush="Blue" CornerRadius="8" Margin="5,5,5,5" Background="LightSkyBlue">
+            <Button x:Name="quit_game" Click="quit_game_Click" Content="Quit Game" Background="LightSkyBlue" FontFamily="Impact" FontSize="24"/>
+        </Border>
+
+    </Grid>
+</UserControl>
